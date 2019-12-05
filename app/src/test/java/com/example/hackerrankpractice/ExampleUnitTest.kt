@@ -14,4 +14,13 @@ class ExampleUnitTest {
     fun Grading_Students() {
         assertEquals(GradingStudents.expectedArray, GradingStudents.inputArray)
     }
+
+    @Test
+    fun Kangaroo() {
+        assertEquals("YES", Kangaroo.kangaroo(0, 3, 4, 2))
+        assertEquals("NO", Kangaroo.kangaroo(0, 2, 5, 3))
+        assertEquals("NO", Kangaroo.kangaroo(21, 6, 47, 3))
+        assertEquals("YES", Kangaroo.kangaroo(14,4,98,2))
+        assertEquals("YES", Kangaroo.kangaroo(42,3,94,2))
+    }
 }
