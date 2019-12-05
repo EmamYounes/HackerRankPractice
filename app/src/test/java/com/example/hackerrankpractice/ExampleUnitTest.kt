@@ -20,7 +20,13 @@ class ExampleUnitTest {
         assertEquals("YES", Kangaroo.kangaroo(0, 3, 4, 2))
         assertEquals("NO", Kangaroo.kangaroo(0, 2, 5, 3))
         assertEquals("NO", Kangaroo.kangaroo(21, 6, 47, 3))
-        assertEquals("YES", Kangaroo.kangaroo(14,4,98,2))
-        assertEquals("YES", Kangaroo.kangaroo(42,3,94,2))
+        assertEquals("YES", Kangaroo.kangaroo(14, 4, 98, 2))
+        assertEquals("YES", Kangaroo.kangaroo(42, 3, 94, 2))
+    }
+
+    @Test
+    fun JumpingOnTheClouds() {
+        assertEquals(4, JumpingOnTheClouds.jumpingOnClouds(arrayOf(0, 0, 1, 0, 0, 1, 0)))
+        assertEquals(3, JumpingOnTheClouds.jumpingOnClouds(arrayOf(0, 0, 0, 1, 0, 0)))
     }
 }
