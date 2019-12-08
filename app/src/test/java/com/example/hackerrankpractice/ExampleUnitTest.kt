@@ -29,4 +29,10 @@ class ExampleUnitTest {
         assertEquals(4, JumpingOnTheClouds.jumpingOnClouds(arrayOf(0, 0, 1, 0, 0, 1, 0)))
         assertEquals(3, JumpingOnTheClouds.jumpingOnClouds(arrayOf(0, 0, 0, 1, 0, 0)))
     }
+
+    @Test
+    fun BreakingTheRecords() {
+        assertEquals(arrayOf(2, 4), BreakingTheRecords.breakingRecords(arrayOf(10, 5, 20, 20, 4, 5, 2, 25, 1)))
+        assertEquals(arrayOf(4, 0), BreakingTheRecords.breakingRecords(arrayOf(3, 4, 21, 36, 10, 28, 35, 5, 24, 42)))
+    }
 }
