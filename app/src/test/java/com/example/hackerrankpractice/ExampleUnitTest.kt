@@ -61,4 +61,15 @@ class ExampleUnitTest {
             )
         )
     }
+
+    @Test
+    fun Repeated_String() {
+        assertEquals(7, RepeatedString.repeatedString("aba", 10))
+        assertEquals(1000000000000, RepeatedString.repeatedString("a", 1000000000000))
+        assertEquals(588525, RepeatedString.repeatedString("aab", 882787))
+        val s4 =
+            "kmretasscityylpdhuwjirnqimlkcgxubxmsxpypgzxtenweirknjtasxtvxemtwxuarabssvqdnktqadhyktagjxoanknhgilnm"
+        assertEquals(51574523448, RepeatedString.repeatedString(s4, 736778906400))
+        assertEquals(2, RepeatedString.repeatedString("ababa", 3))
+    }
 }
