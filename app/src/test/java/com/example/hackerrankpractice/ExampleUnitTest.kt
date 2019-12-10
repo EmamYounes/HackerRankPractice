@@ -32,7 +32,19 @@ class ExampleUnitTest {
 
     @Test
     fun BreakingTheRecords() {
-        assertEquals(arrayOf(2, 4), BreakingTheRecords.breakingRecords(arrayOf(10, 5, 20, 20, 4, 5, 2, 25, 1)))
-        assertEquals(arrayOf(4, 0), BreakingTheRecords.breakingRecords(arrayOf(3, 4, 21, 36, 10, 28, 35, 5, 24, 42)))
+        assertEquals(
+            arrayOf(2, 4),
+            BreakingTheRecords.breakingRecords(arrayOf(10, 5, 20, 20, 4, 5, 2, 25, 1))
+        )
+        assertEquals(
+            arrayOf(4, 0),
+            BreakingTheRecords.breakingRecords(arrayOf(3, 4, 21, 36, 10, 28, 35, 5, 24, 42))
+        )
+    }
+
+    @Test
+    fun CutTheSticks() {
+        assertEquals(arrayOf(6, 4, 2, 1), CutTheSticks.cutTheSticks(arrayOf(5, 4, 4, 2, 2, 8)))
+        assertEquals(arrayOf(8,6, 4,1), CutTheSticks.cutTheSticks(arrayOf(1,2,3,4,3,3,2,1)))
     }
 }
