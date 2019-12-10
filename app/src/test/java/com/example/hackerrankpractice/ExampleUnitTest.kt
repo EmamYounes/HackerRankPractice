@@ -25,13 +25,13 @@ class ExampleUnitTest {
     }
 
     @Test
-    fun JumpingOnTheClouds() {
+    fun Jumping_On_TheClouds() {
         assertEquals(4, JumpingOnTheClouds.jumpingOnClouds(arrayOf(0, 0, 1, 0, 0, 1, 0)))
         assertEquals(3, JumpingOnTheClouds.jumpingOnClouds(arrayOf(0, 0, 0, 1, 0, 0)))
     }
 
     @Test
-    fun BreakingTheRecords() {
+    fun Breaking_TheRecords() {
         assertEquals(
             arrayOf(2, 4),
             BreakingTheRecords.breakingRecords(arrayOf(10, 5, 20, 20, 4, 5, 2, 25, 1))
@@ -43,8 +43,22 @@ class ExampleUnitTest {
     }
 
     @Test
-    fun CutTheSticks() {
+    fun Cut_The_Sticks() {
         assertEquals(arrayOf(6, 4, 2, 1), CutTheSticks.cutTheSticks(arrayOf(5, 4, 4, 2, 2, 8)))
-        assertEquals(arrayOf(8,6, 4,1), CutTheSticks.cutTheSticks(arrayOf(1,2,3,4,3,3,2,1)))
+        assertEquals(
+            arrayOf(8, 6, 4, 1),
+            CutTheSticks.cutTheSticks(arrayOf(1, 2, 3, 4, 3, 3, 2, 1))
+        )
+    }
+
+    @Test
+    fun Non_Divisible_Subset() {
+        assertEquals(3, NonDivisibleSubset.nonDivisibleSubset(3, arrayOf(1, 7, 2, 4)))
+        assertEquals(
+            11, NonDivisibleSubset.nonDivisibleSubset(
+                7,
+                arrayOf(278, 576, 496, 727, 410, 124, 338, 149, 209, 702, 282, 718, 771, 575, 436)
+            )
+        )
     }
 }
