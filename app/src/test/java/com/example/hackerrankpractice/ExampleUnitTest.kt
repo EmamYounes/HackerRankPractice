@@ -72,4 +72,10 @@ class ExampleUnitTest {
         assertEquals(51574523448, RepeatedString.repeatedString(s4, 736778906400))
         assertEquals(2, RepeatedString.repeatedString("ababa", 3))
     }
+
+
+    @Test
+    fun Two_D_Array_DS() {
+        assertEquals(19, TwoDArrayDS.hourglassSum(TwoDArrayDS.dummyTwoDArray()))
+    }
 }
