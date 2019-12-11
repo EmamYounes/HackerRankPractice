@@ -65,24 +65,22 @@ class TwoDArrayDS {
                 }
             }
               return sumArray.max()!!*/
-            var sumArr = listOf(0) // Bikin list penampung sum
-            sumArr -= listOf(0) // biar empty dulu
+            var sumArr = listOf(0)
+            sumArr -= listOf(0)
             //println(sumArr)
 
             for(y in 0..3){
                 for(x in 0..3){
-                    // Hitung sum dari bentukan hourglass
+
                     var hourglassSum = arr[y][x] + arr[y][x+1] + arr[y][x+2] + arr[y+1][x+1] + arr[y+2][x] + arr[y+2][x+1] + arr[y+2][x+2]
-                    sumArr += listOf(hourglassSum) // add ke list
-                    //println(hourglassSum)
+                    sumArr += listOf(hourglassSum)
+
                 }
             }
 
-            //println(sumArr)
-            //println(sumArr.max())
 
-            return sumArr.max() as Int // return sum maksimum
-            // '.max()' defaultnya 'Int?' jadi di cast ke Int
+            return sumArr.max() as Int 
+
         }
     }
 }
