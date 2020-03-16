@@ -1,5 +1,6 @@
 package com.example.hackerrankpractice
 
+import com.example.hackerrankpractice.ten_days_of_statistics.MeanMedianMode
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
@@ -75,7 +76,19 @@ class ExampleUnitTest {
 
 
     @Test
-    fun Two_D_Array_DS() {
-        assertEquals(19, TwoDArrayDS.hourglassSum(TwoDArrayDS.dummyTwoDArray()))
+    fun Mean_Median_Mode() {
+/*        assertEquals(43900.6,
+            MeanMedianMode.getMeanNumber(arrayOf(64630,11735,14216,99233,14470,4978,73429,38120,51135,67060)),
+            0.0)
+
+        assertEquals(44627.5,
+            MeanMedianMode.getMedianNumber(arrayOf(64630,11735,14216,99233,14470,4978,73429,38120,51135,67060)),
+            0.0)
+
+        assertEquals(4978,
+            MeanMedianMode.getModeNumber(arrayOf(64630,11735,14216,99233,14470,4978,73429,38120,51135,67060)))*/
+
+        assertEquals(49921.5,
+            MeanMedianMode.getMeanNumber(MeanMedianMode.getList()),0.0)
     }
 }
