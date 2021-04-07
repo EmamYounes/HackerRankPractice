@@ -74,6 +74,10 @@ class ExampleUnitTest {
         assertEquals(2, RepeatedString.repeatedString("ababa", 3))
     }
 
+    @Test
+    fun Divisible_Sum_Pairs() {
+        assertEquals(3, DivisibleSumPairs.divisibleSumPairs(6, 5, arrayOf(1, 2, 3, 4, 5, 6)))
+    }
 
     @Test
     fun Mean_Median_Mode() {
@@ -88,7 +92,9 @@ class ExampleUnitTest {
         assertEquals(4978,
             MeanMedianMode.getModeNumber(arrayOf(64630,11735,14216,99233,14470,4978,73429,38120,51135,67060)))*/
 
-        assertEquals(49921.5,
-            MeanMedianMode.getMeanNumber(MeanMedianMode.getList()),0.0)
+        assertEquals(
+            49921.5,
+            MeanMedianMode.getMeanNumber(MeanMedianMode.getList()), 0.0
+        )
     }
 }
