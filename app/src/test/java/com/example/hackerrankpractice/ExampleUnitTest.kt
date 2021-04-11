@@ -80,6 +80,11 @@ class ExampleUnitTest {
     }
 
     @Test
+    fun Migratory_Birds() {
+        assertEquals(3, MigratoryBirds.migratoryBirds(arrayOf(1, 2, 3, 4, 5, 4, 3, 2, 1, 3, 4)))
+    }
+
+    @Test
     fun Mean_Median_Mode() {
 /*        assertEquals(43900.6,
             MeanMedianMode.getMeanNumber(arrayOf(64630,11735,14216,99233,14470,4978,73429,38120,51135,67060)),
