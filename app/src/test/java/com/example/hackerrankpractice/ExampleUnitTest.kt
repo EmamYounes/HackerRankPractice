@@ -85,6 +85,11 @@ class ExampleUnitTest {
     }
 
     @Test
+    fun Minimum_Swaps() {
+        assertEquals(3, MinimumSwaps.minimumSwaps(arrayOf(2, 3, 1, 4)))
+    }
+
+    @Test
     fun Mean_Median_Mode() {
 /*        assertEquals(43900.6,
             MeanMedianMode.getMeanNumber(arrayOf(64630,11735,14216,99233,14470,4978,73429,38120,51135,67060)),
