@@ -91,8 +91,18 @@ class ExampleUnitTest {
 
     @Test
     fun Making_Anagram() {
-        assertEquals(30, MakingAnagram.makeAnagram("fcrxzwscanmligyxyvym",
-            "jxwtrhvujlmrpdoqbisbwhmgpmeoke"))
+        assertEquals(
+            30, MakingAnagram.makeAnagram(
+                "fcrxzwscanmligyxyvym",
+                "jxwtrhvujlmrpdoqbisbwhmgpmeoke"
+            )
+        )
+    }
+
+
+    @Test
+    fun Bon_Appetit_Problem() {
+        assertEquals(5, BonAppetitProblem.bonAppetit(arrayOf(3, 10, 2, 9), 1, 12))
     }
 
     @Test
