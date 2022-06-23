@@ -123,4 +123,11 @@ class ExampleUnitTest {
             MeanMedianMode.getMeanNumber(MeanMedianMode.getList()), 0.0
         )
     }
+
+    @Test
+    fun find_digit_Problem() {
+        assertEquals(3, FindDigits.findDigits(124))
+        assertEquals(2, FindDigits.findDigits(12))
+        assertEquals(3, FindDigits.findDigits(1012))
+    }
 }
